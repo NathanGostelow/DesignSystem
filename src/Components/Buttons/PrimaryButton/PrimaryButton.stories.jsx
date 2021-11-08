@@ -10,6 +10,13 @@ export default {
     onClick: () => {
       window.alert('im the Primary button');
     }
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/aDR5N00e6a4IIyltUeMjcN/Untitled?node-id=2%3A11'
+    }
   }
 };
 

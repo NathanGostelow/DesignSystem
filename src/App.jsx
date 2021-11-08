@@ -2,14 +2,14 @@ import React from 'react';
 import Styles from './app.module.css';
 
 //components
-import { FavouriteButton } from 'Components/Buttons';
+import { PrimaryButton as Button } from 'Components/Buttons';
 
 const StarterApp = () => {
   return (
     <div className="main">
       <div className="container">
         <h1> StarterApp </h1>
-        <FavouriteButton>hello world</FavouriteButton>
+        <Button>hello world</Button>
       </div>
     </div>
   );

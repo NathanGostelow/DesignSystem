@@ -30,7 +30,8 @@ module.exports = {
     // ../components/component you can do Components/component magic
     alias: {
       Components: path.resolve(__dirname, 'src/Components/'),
-      Styles: path.resolve(__dirname, 'src/Styles')
+      Styles: path.resolve(__dirname, 'src/Styles'),
+      Assets: path.resolve(__dirname, 'src/Assets')
     },
     // this allows you to leave off the file extension.
     extensions: ['.jsx', '.js']
