@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { createUseStyles } from 'react-jss';
+// import { createUseStyles } from 'react-jss';
+import styled from 'styled-components';
 
-import { BaseButton } from '..';
+import { BaseButton } from '../BaseButton/BaseButton';
 import { HeartIcon } from '../../../Assets/svgs';
+
+const StyledFavouriteButton = styled(BaseButton)`
+  background-color: transparent;
+  color: white;
+  width: '50px';
+  height: '50px';
+  border: none;
+  border-radius: '25px';
+`;
 
 export const FavouriteButton = ({ favourited = false }) => {
   const [isActive, setIsActive] = useState(favourited);
@@ -11,29 +21,28 @@ export const FavouriteButton = ({ favourited = false }) => {
     setIsActive(favourited);
   }, [favourited]);
 
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
-    <BaseButton
+    <StyledFavouriteButton
       onClick={() => {
         setIsActive(!isActive);
       }}
-      className={classes.favouritebutton}
     >
       <HeartIcon
         fill={isActive ? 'red' : 'none'}
         stroke={isActive ? 'red' : 'black'}
       />
-    </BaseButton>
+    </StyledFavouriteButton>
   );
 };
 
-const useStyles = createUseStyles({
-  favouritebutton: {
-    backgroundColor: 'transparent',
-    color: 'white',
-    width: '50px',
-    height: '50px',
-    border: 'none',
-    borderRadius: '25px'
-  }
-});
+// const useStyles = createUseStyles({
+//   favouritebutton: {
+//     backgroundColor: 'transparent',
+//     color: 'white',
+//     width: '50px',
+//     height: '50px',
+//     border: 'none',
+//     borderRadius: '25px'
+//   }
+// });

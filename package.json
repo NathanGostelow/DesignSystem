@@ -21,9 +21,11 @@
     "@storybook/addon-links": "^6.3.8",
     "@storybook/react": "^6.3.8",
     "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.13.3",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.0.4",
     "storybook-addon-designs": "^6.2.0",
+    "styled-components": "^5.3.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"

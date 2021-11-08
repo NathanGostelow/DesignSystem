@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from './app.module.css';
 
 //components
-import { PrimaryButton as Button } from 'Components/Buttons';
+import { GhostButton as Button } from 'Components/Buttons';
 
 const StarterApp = () => {
   return (
