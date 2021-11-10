@@ -3,13 +3,13 @@ import Styles from './app.module.css';
 
 //components
 import { GhostButton as Button } from 'Components/Buttons';
+import { Login } from './Pages/Login';
 
 const StarterApp = () => {
   return (
     <div className="main">
       <div className="container">
-        <h1> StarterApp </h1>
-        <Button>hello world</Button>
+        <Login></Login>
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
 import React from 'react';
-import { BaseButton } from '../BaseButton/BaseButton';
 import styled from 'styled-components';
+
 import { colours } from 'Styles/Colours';
+
+import { BaseButton } from '../BaseButton/BaseButton';
 
 export const PrimaryButton = styled(BaseButton)`
   color: white;
@@ -13,25 +15,3 @@ export const PrimaryButton = styled(BaseButton)`
     background-color: ${colours.primary100};
   }
 `;
-
-// export const PrimaryButton = ({ children, onClick }) => {
-//   const classes = useStyles();
-//   return (
-//     <BaseButton className={classes.primaryButton} onClick={onClick}>
-//       {children}
-//     </BaseButton>
-//   );
-// };
-
-// const useStyles = createUseStyles({
-//   primaryButton: {
-//     backgroundColor: colours.primary,
-//     color: 'white',
-//     padding: '10px 15px',
-//     border: 'none',
-//     borderRadius: '25px',
-//     '&:hover': {
-//       backgroundColor: colours.primary100
-//     }
-//   }
-// });

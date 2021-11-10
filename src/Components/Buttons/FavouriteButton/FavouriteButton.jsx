@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import { createUseStyles } from 'react-jss';
 import styled from 'styled-components';
 
 import { BaseButton } from '../BaseButton/BaseButton';
@@ -21,7 +20,6 @@ export const FavouriteButton = ({ favourited = false }) => {
     setIsActive(favourited);
   }, [favourited]);
 
-  // const classes = useStyles();
   return (
     <StyledFavouriteButton
       onClick={() => {
@@ -35,14 +33,3 @@ export const FavouriteButton = ({ favourited = false }) => {
     </StyledFavouriteButton>
   );
 };
-
-// const useStyles = createUseStyles({
-//   favouritebutton: {
-//     backgroundColor: 'transparent',
-//     color: 'white',
-//     width: '50px',
-//     height: '50px',
-//     border: 'none',
-//     borderRadius: '25px'
-//   }
-// });
