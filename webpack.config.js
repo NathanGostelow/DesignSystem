@@ -5,6 +5,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(ts|tsx)$/,
+        exclude: [/node_modules/],
+        use: 'ts-loader'
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
@@ -34,7 +39,11 @@ module.exports = {
       Assets: path.resolve(__dirname, 'src/Assets')
     },
     // this allows you to leave off the file extension.
-    extensions: ['.jsx', '.js']
+    extensions: ['.jsx', '.js', '.ts', '.tsx']
+  },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
   plugins: [
     new HtmlWebPackPlugin({

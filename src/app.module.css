@@ -1,23 +1,23 @@
 :root {
-    --main-color: #c42847;
-    --secondary-color: #fbfaf8;
+  --main-color: #c42847;
+  --secondary-color: #fbfaf8;
 }
 html {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-    margin: 0px;
-    background-color: var(--main-color);
+  margin: 0px;
+  background-color: var(--main-color);
 }
 .main {
-    height: 100vh;
-    color: var(--secondary-color);
-    font-size: 18px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  color: var(--secondary-color);
+  font-size: 18px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {

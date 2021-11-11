@@ -18,6 +18,7 @@ const ButtonContainer = styled.div`
   justify-content: space-around;
   width: 100%;
 `;
+
 export const Login = () => {
   return (
     <LoginContainer>

@@ -1,4 +1,7 @@
-module.exports = {
-  plugins: ['react'],
-  extends: ['eslint:all', 'plugin:react/all', 'airbnb']
-};
+{
+  "root": true,
+  "extends": [
+      "@react-native-community",
+      "prettier"
+  ]
+}
