@@ -1,7 +1,28 @@
+// {
+//   "extends": ,
+//   "rules": {
+//     "prefer-default-export": 0
+//   }
+// }
 {
   "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+  ],
   "extends": [
-      "@react-native-community",
-      "prettier"
-  ]
+    "airbnb",
+    "prettier",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+  ],
+  "ignorePatterns": ["webpack.config.js"],
+  "rules": {
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/function-component-definition": [2, {
+      "namedComponents": "arrow-function",
+      "unnamedComponents": "arrow-function"
+      }],
+      "import/prefer-default-export": "off"
+  }
 }
