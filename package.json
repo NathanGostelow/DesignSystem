@@ -9,7 +9,9 @@
     "build": "webpack --mode production",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint \"**/*.{js,ts,tsx}\""
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "prepare": "husky install",
+    "tsc": "tsc --noEmit"
   },
   "author": "Nathan Gostelow",
   "license": "ISC",
@@ -38,6 +40,7 @@
     "eslint-plugin-react": "^7.27.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.0.4",
+    "husky": "^7.0.0",
     "prettier": "^2.4.1",
     "storybook-addon-designs": "^6.2.0",
     "ts-loader": "^9.2.6",

@@ -1,4 +1,7 @@
-export function HeartIcon({ fill, stroke }: {
-    fill: any;
-    stroke: any;
-}): JSX.Element;
+import React from 'react';
+interface SVGProps {
+    fill: string;
+    stroke: string;
+}
+export declare const HeartIcon: React.FC<SVGProps>;
+export {};

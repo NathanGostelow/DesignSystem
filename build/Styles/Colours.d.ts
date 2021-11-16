@@ -1,6 +1,6 @@
-export namespace colours {
-    const primary: string;
-    const primary100: string;
-    const secondary: string;
-    const secondary100: string;
-}
+export declare const colours: {
+    primary: string;
+    primary100: string;
+    secondary: string;
+    secondary100: string;
+};
