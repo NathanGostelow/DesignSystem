@@ -13,6 +13,11 @@
       "allowJs": true,
       "esModuleInterop": true,
       "noImplicitAny": true,
+      "baseUrl": "src",
+      "paths": {
+          "Styles/*": ["Styles/*"],
+          "Assets/*": ["Assets/*"]
+      }
     },
     "include": ["src/**/*"],
     "exclude": [

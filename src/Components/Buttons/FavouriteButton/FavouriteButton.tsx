@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
+import { HeartIcon } from 'Assets/svgs';
 import { BaseButton } from '../BaseButton/BaseButton';
-import { HeartIcon } from '../../../Assets/svgs';
 
 const StyledFavouriteButton = styled(BaseButton)`
   background-color: transparent;
@@ -13,7 +13,11 @@ const StyledFavouriteButton = styled(BaseButton)`
   border-radius: '25px';
 `;
 
-export const FavouriteButton = ({ favourited = false }) => {
+interface FavouriteButtonProps {
+  favourited: boolean;
+}
+
+export const FavouriteButton: React.FC<FavouriteButtonProps> = ({ favourited = false }: FavouriteButtonProps) => {
   const [isActive, setIsActive] = useState(favourited);
 
   useEffect(() => {
