@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {
   GhostButton,
-  SecondaryButton,
-  FavouriteButton
+  FavouriteButton,
+  PrimaryButton
 } from '../Components/Buttons';
 
 const LoginContainer = styled.div`
@@ -19,16 +19,13 @@ const ButtonContainer = styled.div`
   width: 100%;
 `;
 
-export const Login = () => {
-  return (
-    <LoginContainer>
-      <h1>Lightning Talk</h1>
-      <h3>Login</h3>
-      <ButtonContainer>
-        <SecondaryButton>Sign Up</SecondaryButton>
-        <FavouriteButton></FavouriteButton>
-        <GhostButton>Log In</GhostButton>
-      </ButtonContainer>
-    </LoginContainer>
-  );
-};
+export const Login = () => (
+  <LoginContainer>
+    <h1>Lightning Talk</h1>
+    <h3>Login</h3>
+    <ButtonContainer>
+      <PrimaryButton>Sign Up</PrimaryButton>
+      <FavouriteButton />
+    </ButtonContainer>
+  </LoginContainer>
+);
